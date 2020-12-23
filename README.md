@@ -21,3 +21,23 @@ This is an express ecommerce app where one person's used stuff can be sold and b
 * amazon.com
 * eBay.com
 * udemy: https://www.udemy.com/course/build-an-amazon-clone
+
+
+### Action Items
+[x] set up github
+
+[x] set up heroku
+
+[x] live "hello world"
+
+[x] 1st git push
+
+[x] 1st heroku push
+
+[x] .idea added to .gitignore
+
+[ ] 2nd git push
+
+[ ] 2nd heroku push
+
+
