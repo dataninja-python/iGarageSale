@@ -2,10 +2,11 @@
 This is an express ecommerce app where one person's used stuff can be sold and become another's new treasure.
 
 ## MVP
-
+A web app that allows users to sell items like they would with a garage sale.
 
 ## Stretch Goals
-
+* allow people to make an offer above or below the purchase price
+* allow price to move over time
 
 ##Technology Stack
 * nodejs = backend javascript
