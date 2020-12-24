@@ -22,6 +22,21 @@ A web app that allows users to sell items like they would with a garage sale.
 * amazon.com
 * eBay.com
 * udemy: https://www.udemy.com/course/build-an-amazon-clone
+    * NOTE: this course does a good job of breaking down get, post, put and delete
+    * NOTE: also, breaks down building an app into good bite-sized chunks
+
+## Challenges
+* I quickly realized I lacked a firm understanding of CRUD and WHY things were 
+  connected as they were in our fruits app. To resolve this, I reviewied classes and
+  took the 8-hr udemy course mentioned above.
+
+* My project is ambitious as I aim to create a store with enough functionality
+  for me and others to sell unwanted items like a neighborhood garage sale. I had to
+  rewrite my pseudocode several times and break things down into small chunks.
+
+
+## Wins
+
 
 
 ### Action Items

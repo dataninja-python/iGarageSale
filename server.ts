@@ -2,7 +2,10 @@
 * dependencies
 * */
 const express = require("express");
+// add additional user logging functionality
+const morgan = require("morgan");
 const methodOveride = require("method-override");
+// object relational mapper to connect mongo db and nodejs
 const mongoose = require("mongoose");
 const app = express();
 const db = mongoose.connection;
@@ -40,6 +43,7 @@ db.on("disconnected", function () {
 /*
 * middleware
 * */
+app.use(morgan("dev"));
 app.use(express.static("public"));
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
@@ -49,13 +53,36 @@ app.use(methodOveride("_method"));
 /*
 * routes
 * */
+//------------------ get routes ---------------------
+// landing page
 app.get("/", function (req, res) {
-    res.send("Hello World");
+    let name = "iGarageSale";
+    res.json(`Welcome to ${name}`);
+    // res.send("Hello World");
 });
+
+app.get("/igs", function (req, res) {
+    let test = "testing 123";
+    res.json(`${test}`);
+});
+
+//------------------ post routes ---------------------
+// app.post();
+
+
+//------------------ put routes ---------------------
+// app.put();
+
+//------------------ delete routes ---------------------
+// app.delete();
 
 /*
 * listening server port
 * */
-app.listen(PORT, function () {
-    console.log("Listening on port: ", PORT);
+// e = error
+app.listen(PORT, function (e) {
+    if(e) {
+        throw(e);
+    }
+    console.log("Server running on port: ", PORT);
 });

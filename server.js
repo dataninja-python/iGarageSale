@@ -2,6 +2,7 @@
 * dependencies
 * */
 var express = require("express");
+var morgan = require("morgan");
 var methodOveride = require("method-override");
 var mongoose = require("mongoose");
 var app = express();
@@ -35,13 +36,38 @@ db.on("disconnected", function () {
 /*
 * middleware
 * */
+app.use(morgan("dev"));
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(methodOveride("_method"));
+/*
+* routes
+* */
+//------------------ get routes ---------------------
+// landing page
 app.get("/", function (req, res) {
-    res.send("Hello World");
+    var name = "iGarageSale";
+    res.json("Welcome to " + name);
+    // res.send("Hello World");
 });
-app.listen(PORT, function () {
-    console.log("Listening on port: ", PORT);
+app.get("/igs", function (req, res) {
+    var test = "testing 123";
+    res.json("" + test);
+});
+//------------------ post routes ---------------------
+// app.post();
+//------------------ put routes ---------------------
+// app.put();
+//------------------ delete routes ---------------------
+// app.delete();
+/*
+* listening server port
+* */
+// e = error
+app.listen(PORT, function (e) {
+    if (e) {
+        throw (e);
+    }
+    console.log("Server running on port: ", PORT);
 });
