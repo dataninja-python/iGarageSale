@@ -24,6 +24,9 @@ A web app that allows users to sell items like they would with a garage sale.
 * udemy: https://www.udemy.com/course/build-an-amazon-clone
     * NOTE: this course does a good job of breaking down get, post, put and delete
     * NOTE: also, breaks down building an app into good bite-sized chunks
+    * NOTE: the bcrypt process used in the course helped me make my app more secure
+      * i.e., in the course, we explicitly encrypt data pre-sending it to the db;
+        i'm still unsure if we did that in the fruits auth example
 
 ## Challenges
 * I quickly realized I lacked a firm understanding of CRUD and WHY things were 
@@ -36,6 +39,8 @@ A web app that allows users to sell items like they would with a garage sale.
 
 
 ## Wins
+* I understand that CRUD translates to: post = create, get = read, put = update, 
+  delete = delete.
 
 
 
