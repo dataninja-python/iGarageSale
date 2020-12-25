@@ -1,25 +1,28 @@
 /*
 * dependencies
 * */
-var express = require("express");
-var methodOveride = require("method-override");
+const express = require("express");
+const methodOveride = require("method-override");
 // object relational mapper to connect mongo db and nodejs
-var mongoose = require("mongoose");
+const mongoose = require("mongoose");
 // add additional user logging functionality
-var morgan = require("morgan");
-var bodyParser = require("body-parser");
-var User = require("./models/user");
+const morgan = require("morgan");
+const bodyParser = require("body-parser");
+const User = require("./models/user");
+
 /*
 * configuration
 * */
 require("dotenv").config();
-var app = express();
-var db = mongoose.connection;
-var PORT = process.env.PORT || 3003;
-var MONGODB_URI = process.env.MONGODB_URI;
+const app = express();
+const db = mongoose.connection;
+const PORT = process.env.PORT || 3003;
+
 /*
 * database
 * */
+const MONGODB_URI = process.env.MONGODB_URI;
+
 // ------------------------------------------------
 // config db
 // ------------------------------------------------
@@ -27,30 +30,35 @@ mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
-    useCreateIndex: true
-}, function () {
-    console.log("Mongod connection established at: " + MONGODB_URI);
+        useCreateIndex: true
+},
+    function () {
+        console.log(`Mongod connection established at: ${MONGODB_URI}`);
 });
+
 db.on("error", function (e) {
     console.log(e.message + " is Mongod not running?");
 });
-db.on("connected", function () {
-    console.log("mongo connected: " + MONGODB_URI);
-});
+// db.on("connected", function () {
+//     console.log(`mongo connected: ${MONGODB_URI}`);
+// });
 db.on("disconnected", function () {
     console.log("mongo disconnected");
 });
+
 /*
 * middleware
 * */
 app.use(morgan("dev"));
-// app can now parse json data using bodyParser
+// app can now parse json data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 app.use(methodOveride("_method"));
+
+
 /*
 * routes
 * */
@@ -66,39 +74,39 @@ app.use(methodOveride("_method"));
 //     let test = "testing 123";
 //     res.json(`${test}`);
 // });
-app.post("/create-user", function (req, res, next) {
-    var user = new User();
-    var body = req.body;
-    // store form collected data in new user
-    user.profile.name = body.name;
-    user.password = body.password;
-    user.email = body.email;
-    // save the user
-    user.save(function (e) {
-        if (e) {
+
+app.post("/create-user", function(req, res, next) {
+    let user = new User();
+    user.profile.name = req.body.name;
+    user.password = req.body.password;
+    user.email = req.body.email;
+
+    user.save(function(e) {
+        if(e) {
             return next(e);
         }
-        else {
-            res.json("new user created successfully!");
-        }
-        ;
+        res.json("new user created successfully!");
     });
 });
+
+
 //------------------ post routes ---------------------
 // app.post();
+
+
 //------------------ put routes ---------------------
 // app.put();
+
 //------------------ delete routes ---------------------
 // app.delete();
+
 /*
 * listening server port
 * */
 // e = error
 app.listen(PORT, function (e) {
-    if (e) {
-        throw (e);
+    if(e) {
+        throw(e);
     }
-    else {
-        console.log("Server running on port: ", PORT);
-    }
+    console.log("Server running on port: ", PORT);
 });

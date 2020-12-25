@@ -1,3 +1,4 @@
+"use strict";
 /*
 * dependencies
 * */
@@ -16,10 +17,10 @@ require("dotenv").config();
 var app = express();
 var db = mongoose.connection;
 var PORT = process.env.PORT || 3003;
-var MONGODB_URI = process.env.MONGODB_URI;
 /*
 * database
 * */
+var MONGODB_URI = process.env.MONGODB_URI;
 // ------------------------------------------------
 // config db
 // ------------------------------------------------
@@ -34,9 +35,9 @@ mongoose.connect(MONGODB_URI, {
 db.on("error", function (e) {
     console.log(e.message + " is Mongod not running?");
 });
-db.on("connected", function () {
-    console.log("mongo connected: " + MONGODB_URI);
-});
+// db.on("connected", function () {
+//     console.log(`mongo connected: ${MONGODB_URI}`);
+// });
 db.on("disconnected", function () {
     console.log("mongo disconnected");
 });
@@ -44,11 +45,11 @@ db.on("disconnected", function () {
 * middleware
 * */
 app.use(morgan("dev"));
-// app can now parse json data using bodyParser
+// app can now parse json data
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(methodOveride("_method"));
 /*
@@ -68,20 +69,14 @@ app.use(methodOveride("_method"));
 // });
 app.post("/create-user", function (req, res, next) {
     var user = new User();
-    var body = req.body;
-    // store form collected data in new user
-    user.profile.name = body.name;
-    user.password = body.password;
-    user.email = body.email;
-    // save the user
+    user.profile.name = req.body.name;
+    user.password = req.body.password;
+    user.email = req.body.email;
     user.save(function (e) {
         if (e) {
             return next(e);
         }
-        else {
-            res.json("new user created successfully!");
-        }
-        ;
+        res.json("new user created successfully!");
     });
 });
 //------------------ post routes ---------------------
@@ -98,7 +93,5 @@ app.listen(PORT, function (e) {
     if (e) {
         throw (e);
     }
-    else {
-        console.log("Server running on port: ", PORT);
-    }
+    console.log("Server running on port: ", PORT);
 });

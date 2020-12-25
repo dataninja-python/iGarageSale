@@ -16,7 +16,7 @@ A web app that allows users to sell items like they would with a garage sale.
 * elasticsearch = search (stretch)
 * jquery = simplify DOM manipuation
 * stripe = payment api
-
+* postman
 
 ## Inspiration
 * amazon.com
