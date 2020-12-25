@@ -7,6 +7,7 @@ A web app that allows users to sell items like they would with a garage sale.
 ## Stretch Goals
 * allow people to make an offer above or below the purchase price
 * allow price to move over time
+* encrypt password with bcrypt pre putting it in the db
 
 ##Technology Stack
 * nodejs = backend javascript
@@ -37,6 +38,9 @@ A web app that allows users to sell items like they would with a garage sale.
   for me and others to sell unwanted items like a neighborhood garage sale. I had to
   rewrite my pseudocode several times and break things down into small chunks.
 
+* Encrypting the password before it is stored in the database is not working as outlined
+  in the course. Perhaps it must be added to the controller not the model as we do in
+  the class example. But, that has proven to be insecure locally.
 
 ## Wins
 * I understand that CRUD translates to: post = create, get = read, put = update, 
