@@ -12,7 +12,9 @@ const User = require("../models/user");
 * */
 
 //------------------ get routes ---------------------
-
+router.get("/signup", function (req, res, next) {
+    res.render("accounts/signup");
+});
 
 //------------------ post routes ---------------------
 

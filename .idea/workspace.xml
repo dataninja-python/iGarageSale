@@ -5,17 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd0fe361-31fc-4949-80c5-ee78d0b1bb7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/archive/server3.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/accounts/signup.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/layout.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/navbar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/navbar.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/archive" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
@@ -58,7 +68,7 @@
       <workItem from="1608748409923" duration="4229000" />
       <workItem from="1608758316527" duration="303000" />
       <workItem from="1608812770784" duration="13940000" />
-      <workItem from="1608910020699" duration="15848000" />
+      <workItem from="1608910020699" duration="18557000" />
     </task>
     <servers />
   </component>
@@ -70,6 +80,7 @@
         <option value="$PROJECT_DIR$/archive/user2.js" />
         <option value="$PROJECT_DIR$/archive/server2.js" />
         <option value="$PROJECT_DIR$/routes/main.js" />
+        <option value="$PROJECT_DIR$/routes/user.js" />
       </list>
     </option>
   </component>

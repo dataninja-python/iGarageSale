@@ -8,6 +8,9 @@ var User = require("../models/user");
 * routes
 * */
 //------------------ get routes ---------------------
+router.get("/signup", function (req, res, next) {
+    res.render("accounts/signup");
+});
 //------------------ post routes ---------------------
 router.post("/signup", function (req, res, next) {
     // create a new user
