@@ -45,6 +45,7 @@ db.on("disconnected", function () {
 /*
 * middleware
 * */
+app.use(express.static(__dirname + "/public"));
 app.use(morgan("dev"));
 // app can now parse json data using bodyParser
 app.use(bodyParser.json());
