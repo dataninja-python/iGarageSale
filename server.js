@@ -9,6 +9,8 @@ var mongoose = require("mongoose");
 var morgan = require("morgan");
 var bodyParser = require("body-parser");
 var User = require("./models/user");
+var ejs = require("ejs");
+var engine = require("ejs-mate");
 /*
 * configuration
 * */
@@ -51,6 +53,8 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOveride("_method"));
+app.engine("ejs", engine);
+app.set("view engine", "ejs");
 /*
 * routes
 * */
@@ -83,6 +87,9 @@ app.post("/create-user", function (req, res, next) {
         }
         ;
     });
+});
+app.get("/", function (req, res) {
+    res.render("home");
 });
 //------------------ post routes ---------------------
 // app.post();
