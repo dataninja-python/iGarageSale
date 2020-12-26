@@ -62,19 +62,47 @@ app.use(methodOveride("_method"));
 app.engine("ejs", engine);
 app.set("view engine", "ejs");
 
-const mainRoutes = require("./routes/main");
-const userRoutes = require("./routes/user");
-
-app.use(mainRoutes);
-app.use(userRoutes);
 
 /*
 * routes
 * */
 //------------------ get routes ---------------------
+// landing page
+// app.get("/", function (req, res) {
+//     let name = "iGarageSale";
+//     res.json(`Welcome to ${name}`);
+//     // res.send("Hello World");
+// });
+//
+// app.get("/igs", function (req, res) {
+//     let test = "testing 123";
+//     res.json(`${test}`);
+// });
 
+// app.post("/create-user", function(req, res, next) {
+//     let user = new User();
+//     let body = req.body;
+//     // store form collected data in new user
+//     user.profile.name = body.name;
+//     user.password = body.password;
+//     user.email = body.email;
+//     // save the user
+//     user.save(function(e) {
+//         if(e) {
+//             return next(e);
+//         } else {
+//             res.json("new user created successfully!");
+//         };
+//     });
+// });
 
-
+// app.get("/", function(req, res) {
+//     res.render("main/home");
+// });
+//
+// app.get("/about", function(req, res) {
+//     res.render("main/about");
+// });
 //------------------ post routes ---------------------
 // app.post();
 

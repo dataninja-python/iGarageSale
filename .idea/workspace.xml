@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd0fe361-31fc-4949-80c5-ee78d0b1bb7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/archive/boilerplate2.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/server3.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/boilerplate.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/boilerplate.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,7 @@
       <workItem from="1608748409923" duration="4229000" />
       <workItem from="1608758316527" duration="303000" />
       <workItem from="1608812770784" duration="13940000" />
-      <workItem from="1608910020699" duration="13225000" />
+      <workItem from="1608910020699" duration="15848000" />
     </task>
     <servers />
   </component>
@@ -69,6 +69,7 @@
         <option value="$PROJECT_DIR$/models/user.js" />
         <option value="$PROJECT_DIR$/archive/user2.js" />
         <option value="$PROJECT_DIR$/archive/server2.js" />
+        <option value="$PROJECT_DIR$/routes/main.js" />
       </list>
     </option>
   </component>
