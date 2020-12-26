@@ -91,6 +91,9 @@ app.post("/create-user", function (req, res, next) {
 app.get("/", function (req, res) {
     res.render("home");
 });
+app.get("/about", function (req, res) {
+    res.render("about");
+});
 //------------------ post routes ---------------------
 // app.post();
 //------------------ put routes ---------------------
