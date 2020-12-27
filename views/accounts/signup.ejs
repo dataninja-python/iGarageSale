@@ -3,7 +3,14 @@
 
 <div class="row">
     <div class="col-lg-6 col-md-offset-3">
-
+        <% if (errors.length > 0){ %>
+            <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+                <span area-hidden="true">&times;</span>
+                </button>
+                <%= errors %>
+            </div>
+        <% } %>
         <form method="post">
 
             <h1>Signup</h1>
@@ -19,7 +26,9 @@
                 <label for="password">Password: </label>
                 <input type="password" class="form-control" name="password">
             </div>
-            
+            <div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
         </form>
 
     </div>

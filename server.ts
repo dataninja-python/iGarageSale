@@ -11,6 +11,13 @@ const bodyParser = require("body-parser");
 const User = require("./models/user");
 const ejs = require("ejs");
 const engine = require("ejs-mate");
+// may need to replace with express-session
+const session = require("express-session");
+const cookieParser = require("cookie-parser");
+const flash = require("express-flash");
+const MongoStore = require("connect-mongo")(session);
+const passport = require("passport");
+
 
 /*
 * configuration
@@ -59,6 +66,16 @@ app.use(express.static("public"));
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(methodOveride("_method"));
+app.use(cookieParser());
+app.use(session({
+    resave: true,
+    saveUninitialized: true,
+    secret: process.env.SECRET,
+    store: new MongoStore({url: MONGODB_URI, autoReconnect: true}),
+}));
+app.use(flash());
+
+
 app.engine("ejs", engine);
 app.set("view engine", "ejs");
 

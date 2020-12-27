@@ -11,6 +11,12 @@ var bodyParser = require("body-parser");
 var User = require("./models/user");
 var ejs = require("ejs");
 var engine = require("ejs-mate");
+// may need to replace with express-session
+var session = require("express-session");
+var cookieParser = require("cookie-parser");
+var flash = require("express-flash");
+var MongoStore = require("connect-mongo")(session);
+var passport = require("passport");
 /*
 * configuration
 * */
@@ -54,6 +60,14 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOveride("_method"));
+app.use(cookieParser());
+app.use(session({
+    resave: true,
+    saveUninitialized: true,
+    secret: process.env.SECRET,
+    store: new MongoStore({ url: MONGODB_URI, autoReconnect: true })
+}));
+app.use(flash());
 app.engine("ejs", engine);
 app.set("view engine", "ejs");
 var mainRoutes = require("./routes/main");
