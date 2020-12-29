@@ -30,6 +30,9 @@ A web app that allows users to sell items like they would with a garage sale.
         i'm still unsure if we did that in the fruits auth example
 
 ## Challenges
+* By far the greatest challenge was converting code written in the Amazon clone course from
+  ES5 to ES6 so it worked as expected. It required hours of reading documentation on mongoose, mongo, and other packages used.
+
 * I quickly realized I lacked a firm understanding of CRUD and WHY things were 
   connected as they were in our fruits app. To resolve this, I reviewied classes and
   took the 8-hr udemy course mentioned above.
@@ -65,4 +68,8 @@ A web app that allows users to sell items like they would with a garage sale.
 
 [ ] 2nd heroku push
 
+##SPECIAL THANKS
+* Matt = general guidance
+* Evan = add secret to Heroku settings
+* Malik = willingness to help resolve ES5-ES6 conversion issue
 
