@@ -105,3 +105,6 @@ dist
 
 # IDE exclusion
 .idea
+
+# old zip file
+.igs.zip
