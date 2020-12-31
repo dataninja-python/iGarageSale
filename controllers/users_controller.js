@@ -4,12 +4,14 @@
 var bcrypt = require("bcrypt");
 var express = require("express");
 var users = express.Router();
-var User = require("../models/user_model");
+var User = require("../models/user_model.js");
 /*
 * routes
 * */
 users.get("/new", function (request, response) {
-    response.render("users/new.ejs");
+    response.render("users/new.ejs", {
+        currentUser: request.session.currentUser
+    });
 });
 users.post("/", function (request, response) {
     // let body = request.body;

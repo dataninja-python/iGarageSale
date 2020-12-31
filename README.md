@@ -1,8 +1,8 @@
 # iGarageSale
-This is an express ecommerce app where one person's used stuff can be sold and become another's new treasure.
+This is an express ecommerce app where one person's new, used, or created tech can become another's treasure.
 
 ## MVP
-A web app that allows users to sell items like they would with a garage sale.
+A web app that allows users to sell computers, gadgets and other technology items as they would at a garage sale. This means people can submit offers (stretch goal).
 
 ## Stretch Goals
 * allow people to make an offer above or below the purchase price
@@ -20,8 +20,11 @@ A web app that allows users to sell items like they would with a garage sale.
 * postman
 
 ## Inspiration
+* Fruits
+* Microcenter (my favorite store)
 * amazon.com
 * eBay.com
+* Matt
 * udemy: https://www.udemy.com/course/build-an-amazon-clone
     * NOTE: this course does a good job of breaking down get, post, put and delete
     * NOTE: also, breaks down building an app into good bite-sized chunks
@@ -43,11 +46,12 @@ A web app that allows users to sell items like they would with a garage sale.
 
 * Encrypting the password before it is stored in the database is not working as outlined
   in the course. Perhaps it must be added to the controller not the model as we do in
-  the class example. But, that has proven to be insecure locally.
+  the class example. But, that has proven to be insecure locally. Alas, I was forced to abandon pre-hashing and working with approach outlined in class. 
 
 ## Wins
-* I understand that CRUD translates to: post = create, get = read, put = update, 
+* Understand that CRUD translates to: post = create, get = read, put = update, 
   delete = delete.
+* Rebuilt fruits from scatch and converted it to Brendan's authorization approach.
 
 
 
@@ -70,6 +74,8 @@ A web app that allows users to sell items like they would with a garage sale.
 
 ##SPECIAL THANKS
 * Matt = general guidance
+* Brendan = authentication
+* Jerrica = front-end cheat codes from class
 * Evan = add secret to Heroku settings
 * Malik = willingness to help resolve ES5-ES6 conversion issue
 

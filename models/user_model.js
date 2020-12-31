@@ -6,7 +6,7 @@ var Schema = mongoose.Schema;
 /*
 * schema
 * */
-var userSchema = Schema({
+var userSchema = new Schema({
     username: { type: String, unique: true, required: true },
     password: String
 });

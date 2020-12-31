@@ -7,7 +7,7 @@
 #tsc routes/main.ts
 #tsc routes/user_model.ts
 tsc server.ts
-tsc models/fruits.ts
+tsc models/fruits_model.ts
 tsc models/user_model.ts
 tsc controllers/fruits_controller.ts
 tsc controllers/users_controller.ts

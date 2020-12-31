@@ -2,8 +2,8 @@
 * dependencies
 * */
 const express = require("express");
-const router = express.Router();
-const Fruit = require("../models/fruits");
+const Fruit = require("../models/fruits_model.js");
+const fruits = express.Router();
 
 const theSeed = [
     {
@@ -29,31 +29,35 @@ const theSeed = [
 // variables
 const itemsRoute = "/";
 const newRoute = "/new";
-const seedRoute = "/seed";
+const seedRoute = "/setup/seed";
 const idRoute = "/:id";
 const editRoute = "/:id/edit";
 
 //------------------ get routes (read) ---------------------
-// app.get();
 
-// show all items
-router.get(itemsRoute, function (request, response){
-    console.log(itemsRoute);
-    console.log(request);
+
+// show all items on index page
+fruits.get(itemsRoute, function (request, response){
+    // console.log(itemsRoute);
+    // console.log(request);
     Fruit.find({}, function (error, allFruits) {
-        response.render("main/index.ejs", {
-            fruits: allFruits
+        response.render("fruits/index.ejs", {
+            fruits: allFruits,
+            currentUser: request.session.currentUser
         });
     });
 });
 
 // create new items
-router.get(newRoute, function (request, response){
-    response.render("main/new.ejs");
+fruits.get(newRoute, function (request, response){
+    response.render(
+        "fruits/new.ejs", {
+            currentUser: request.session.currentUser
+        });
 });
 
 // seed items
-router.get(seedRoute, function (request, response){
+fruits.get(seedRoute, function (request, response){
     // create something
     Fruit.create(
         theSeed,
@@ -64,33 +68,35 @@ router.get(seedRoute, function (request, response){
 });
 
 // show a specific item
-router.get(idRoute, function (request, response) {
+fruits.get(idRoute, function (request, response) {
     let id = request.params.id;
     // display an item
     Fruit.findById(id, function (error, foundFruit) {
         if (error) throw error;
-        response.render("main/show.ejs", {
-            fruit: foundFruit
+        response.render("fruits/show.ejs", {
+            fruit: foundFruit,
+            currentUser: request.session.currentUser
         });
     });
 });
 
 
 // edit an item
-router.get(editRoute, function (request, response) {
+fruits.get(editRoute, function (request, response) {
     let id = request.params.id;
     Fruit.findById(id, function (error, foundFruit) {
         response.render(
-            "main/edit.ejs",
+            "fruits/edit.ejs",
             {
-                fruit: foundFruit
+                fruit: foundFruit,
+                currentUser: request.session.currentUser
             }
         );
     });
 });
 
 //------------------ post routes (create) ---------------------
-router.post(itemsRoute, function (request, response) {
+fruits.post(itemsRoute, function (request, response) {
     let body = request.body;
     if (body.readyToEat === "on") {
         body.readyToEat = true;
@@ -100,6 +106,7 @@ router.post(itemsRoute, function (request, response) {
     // response.send(body);
     Fruit.create(body, function (error, createdFruit) {
         if (error) throw error;
+        console.log(`${createdFruit} created`);
         // response.send(createdFruit);
         response.redirect("/fruits");
     });
@@ -107,7 +114,7 @@ router.post(itemsRoute, function (request, response) {
 
 
 //------------------ put routes (update) ---------------------
-router.put(idRoute, function (request, response) {
+fruits.put(idRoute, function (request, response) {
     let body = request.body;
     let id = request.params.id;
     if(body.readyToEat === "on") {
@@ -123,8 +130,9 @@ router.put(idRoute, function (request, response) {
 
 //------------------ delete routes (delete) ---------------------
 // delete an item
-router.delete(idRoute, function (request, response) {
+fruits.delete(idRoute, function (request, response, deletedFruit) {
     let id = request.params.id;
+    console.log(`${deletedFruit} deleted`)
     // remove this item
     Fruit.findByIdAndRemove(id, function (error, data) {
         if (error) throw error;
@@ -137,4 +145,4 @@ router.delete(idRoute, function (request, response) {
 /*
 * router
 * */
-module.exports = router;
+module.exports = fruits;

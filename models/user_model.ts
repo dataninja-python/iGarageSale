@@ -7,9 +7,10 @@ const Schema = mongoose.Schema;
 /*
 * schema
 * */
-const userSchema = Schema({
+const userSchema = new Schema({
     username: { type: String, unique: true, required: true },
-    password: String
+    password: String,
+    // email: { type: String, unique: true, required: true}
 });
 
 /*

@@ -5,49 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd0fe361-31fc-4949-80c5-ee78d0b1bb7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/archive/new.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/fruits_controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/sessions_controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/users_controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/fruits.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/user_model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/user_model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/accounts/login.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/accounts/profile.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/main/edit.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/main/index.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/main/new.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/main/show.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/sessions/new.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/users/new.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/fruits/edit.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/fruits/index.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/fruits/new.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/fruits/show.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partials/head.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/boilerplate2.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/server2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/server2.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/server3.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/user2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/user2.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/user3.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/user4.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/compile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/compile.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/passport.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/passport.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/user.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/fruits_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/fruits_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/fruits_controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/fruits_controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/sessions_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/sessions_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/sessions_controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/sessions_controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/users_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/users_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/users_controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/users_controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fruits.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/fruits_model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/fruits.ts" beforeDir="false" afterPath="$PROJECT_DIR$/models/fruits_model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user_model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user_model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/models/user_model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/setup.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/navbar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/navbar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/sessions/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sessions/new.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/users/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/new.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/partials" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -88,6 +68,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/partials" />
       <recent name="$PROJECT_DIR$/views/main" />
       <recent name="$PROJECT_DIR$/archive" />
     </key>
@@ -114,7 +95,9 @@
       <workItem from="1609091380476" duration="8627000" />
       <workItem from="1609161187607" duration="10913000" />
       <workItem from="1609178563057" duration="9879000" />
-      <workItem from="1609245221298" duration="3232000" />
+      <workItem from="1609245221298" duration="8424000" />
+      <workItem from="1609333025842" duration="4775000" />
+      <workItem from="1609426223188" duration="1661000" />
     </task>
     <servers />
   </component>
@@ -122,7 +105,6 @@
     <option name="version" value="3" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/models/fruits.js" />
         <option value="$PROJECT_DIR$/controllers/users_controller.js" />
         <option value="$PROJECT_DIR$/controllers/sessions_controller.js" />
       </list>
