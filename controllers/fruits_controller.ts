@@ -33,6 +33,18 @@ const seedRoute = "/setup/seed";
 const idRoute = "/:id";
 const editRoute = "/:id/edit";
 
+/*
+* authentication
+* */
+const isAuthenticated = function (request, response, next) {
+    if (request.session.currentUser) {
+        return next();
+    } else {
+        response.redirect("/sessions/new");
+    }
+}
+
+
 //------------------ get routes (read) ---------------------
 
 
@@ -114,7 +126,7 @@ fruits.post(itemsRoute, function (request, response) {
 
 
 //------------------ put routes (update) ---------------------
-fruits.put(idRoute, function (request, response) {
+fruits.put(idRoute, isAuthenticated, function (request, response) {
     let body = request.body;
     let id = request.params.id;
     if(body.readyToEat === "on") {
@@ -130,7 +142,7 @@ fruits.put(idRoute, function (request, response) {
 
 //------------------ delete routes (delete) ---------------------
 // delete an item
-fruits.delete(idRoute, function (request, response, deletedFruit) {
+fruits.delete(idRoute, isAuthenticated, function (request, response, deletedFruit) {
     let id = request.params.id;
     console.log(`${deletedFruit} deleted`)
     // remove this item

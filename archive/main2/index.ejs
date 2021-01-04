@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Fruits Index Page</h1>
+
+    <ul>
+        <!--loop to display all items in database-->
+        <% for(let i = 0; i < fruits.length; i++) {%>
+            <li>
+                <a href="/fruits/<%=fruits[i].id; %>">
+                    <%=fruits[i].name; %>
+                    <!--delete form-->
+                    <form action="/fruits/<%=fruits[i].id; %>?_method=DELETE" method="post">
+                        <input type="submit" value="DELETE" />
+                    </form>
+                </a>
+                <a href="/fruits/<%=fruits[i].id; %>/edit">Edit</a>
+            </li>
+        <%}%>
+    </ul>
+    <nav>
+        <a href="/fruits/new">Create a New Fruit</a>
+        <a href="/fruits/seed">Seed New Fruits</a>
+    </nav>
+</body>
+</html>

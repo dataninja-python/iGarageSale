@@ -1,0 +1,34 @@
+/*insert variables for theme*/
+
+
+.logo {
+    max-width: 32px;
+    min-width: 16px;
+    height: auto;
+}
+
+.container {
+    margin-top: 60px;
+}
+
+.carousel {
+    /*border: 1px dashed blue;*/
+    height: 250px;
+}
+
+.carousel-inner {
+    /*border: 1px dashed green;*/
+    height: 100%;
+    overflow: hidden;
+    background-color: #777;
+}
+
+.carousel-item {
+    /*border: 1px dashed red;*/
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    padding-top: 50px;
+}

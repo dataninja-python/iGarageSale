@@ -30,11 +30,22 @@ var newRoute = "/new";
 var seedRoute = "/setup/seed";
 var idRoute = "/:id";
 var editRoute = "/:id/edit";
+/*
+* authentication
+* */
+var isAuthenticated = function (request, response, next) {
+    if (request.session.currentUser) {
+        return next();
+    }
+    else {
+        response.redirect("/sessions/new");
+    }
+};
 //------------------ get routes (read) ---------------------
 // show all items on index page
 fruits.get(itemsRoute, function (request, response) {
-    console.log(itemsRoute);
-    console.log(request);
+    // console.log(itemsRoute);
+    // console.log(request);
     Fruit.find({}, function (error, allFruits) {
         response.render("fruits/index.ejs", {
             fruits: allFruits,
@@ -99,7 +110,7 @@ fruits.post(itemsRoute, function (request, response) {
     });
 });
 //------------------ put routes (update) ---------------------
-fruits.put(idRoute, function (request, response) {
+fruits.put(idRoute, isAuthenticated, function (request, response) {
     var body = request.body;
     var id = request.params.id;
     if (body.readyToEat === "on") {
@@ -116,7 +127,7 @@ fruits.put(idRoute, function (request, response) {
 });
 //------------------ delete routes (delete) ---------------------
 // delete an item
-fruits["delete"](idRoute, function (request, response, deletedFruit) {
+fruits["delete"](idRoute, isAuthenticated, function (request, response, deletedFruit) {
     var id = request.params.id;
     console.log(deletedFruit + " deleted");
     // remove this item

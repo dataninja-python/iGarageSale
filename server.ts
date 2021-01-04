@@ -6,7 +6,9 @@ const methodOveride = require("method-override");
 // object relational mapper to connect mongo db and nodejs
 const mongoose = require("mongoose");
 const session = require("express-session");
-
+const morgan = require("morgan");
+const ejs = require("ejs");
+const engine = require("ejs-mate");
 
 /*
 * configuration
@@ -21,13 +23,17 @@ const MONGODB_URI = process.env.MONGODB_URI;
 * middleware
 * */
 app.use(methodOveride("_method"));
+app.use(morgan("dev"));
+app.use(express.static("public"));
 app.use(express.urlencoded({extended:true}));
 app.use(session({
     resave: false,
     saveUninitialized: false,
     secret: process.env.SECRET,
 }));
-
+app.use(express.json());
+app.engine("ejs", engine);
+app.set("view engine", "ejs");
 
 /*
 * database
@@ -57,7 +63,7 @@ db.on("disconnected", function () {
 
 
 /*
-* controller
+* controllers
 * */
 const fruitsController = require("./controllers/fruits_controller.js");
 app.use("/fruits", fruitsController);
@@ -65,7 +71,21 @@ const userController = require("./controllers/users_controller.js");
 app.use("/users", userController);
 const sessionsController = require("./controllers/sessions_controller.js");
 app.use("/sessions", sessionsController);
+const mainController = require("./controllers/main_controller.js");
+app.use("/", mainController);
 
+/*
+* routes
+* */
+// app.get("/", function (request, response) {
+//     let name = "AJ";
+//     response.json("My name is " + name);
+// });
+//
+// app.get("/batman", function (request, response) {
+//     let name = "Batman";
+//     response.json(name);
+// });
 
 /*
 * listening server port
@@ -84,22 +104,16 @@ app.listen(PORT, function (error) {
 // const morgan = require("morgan");
 // const bodyParser = require("body-parser");
 // const User = require("./models/user");
-// const ejs = require("ejs");
-// const engine = require("ejs-mate");
 // may need to replace with express-session
 // app.use(express.static(__dirname + "/public"));
-// app.use(morgan("dev"));
 // app can now parse json data using bodyParser
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(express.static("public"));
-// app.use(express.json());
 // app.use(cookieParser());
 // app.use(flash());
 // app.use(passport.initialize());
 // app.use(passport.session());
-// app.engine("ejs", engine);
-// app.set("view engine", "ejs");
+
 // const mainRoutes = require("./routes/main");
 // const userRoutes = require("./routes/user");
 // app.use(mainRoutes);

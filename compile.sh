@@ -12,3 +12,4 @@ tsc models/user_model.ts
 tsc controllers/fruits_controller.ts
 tsc controllers/users_controller.ts
 tsc controllers/sessions_controller.ts
+tsc controllers/main_controller.ts
