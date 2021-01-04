@@ -108,3 +108,6 @@ dist
 
 # old zip file
 .igs.zip
+
+# archive folder
+.archive

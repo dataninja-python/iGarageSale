@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <%- include ('../partials/head.ejs') %>
-</head>
-<body>
-<nav>
-    <%- include ('../partials/nav.ejs') %>
-</nav>
+<% layout("boilerplate") -%>
+
 <div class="container">
     <h1>New User</h1>
     <form action="/users" method="POST">
@@ -18,5 +11,3 @@
         <input type="submit" value="Submit">
     </form>
 </div>
-</body>
-</html>

@@ -13,11 +13,13 @@
 
 .carousel {
     /*border: 1px dashed blue;*/
+    /*margin-top: 10px;*/
     height: 250px;
 }
 
 .carousel-inner {
     /*border: 1px dashed green;*/
+    display: inline-flex;
     height: 100%;
     overflow: hidden;
     background-color: #777;
@@ -30,5 +32,13 @@
 }
 
 .carousel-caption {
-    padding-top: 50px;
+    /*padding-top: 80px;*/
+}
+
+#myCategories {
+    /*margin-top: 20px;*/
+}
+
+.card {
+    margin-top: 20px;
 }
