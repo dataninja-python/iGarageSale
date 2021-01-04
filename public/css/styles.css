@@ -42,3 +42,24 @@
 .card {
     margin-top: 20px;
 }
+
+.my-links {
+    color: darkgray;
+    text-decoration: none;
+    transition-delay: 350ms;
+}
+
+.my-links:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.my-card-img {
+    /*min-width: 200px;*/
+    height: auto;
+    overflow: hidden;
+}
+
+.card-title {
+    margin-top: 7px;
+}

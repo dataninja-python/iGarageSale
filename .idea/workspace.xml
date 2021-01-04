@@ -5,33 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd0fe361-31fc-4949-80c5-ee78d0b1bb7e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.archive/sessions2/new.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.archive/users2/new.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/favicon/favicomatic.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/favicon/favicomatic.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/head.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/head.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/home2.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/home2.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/iGSlogo.ai" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/iGSlogo.ai" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/main2/about.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/main2/about.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/main2/edit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/main2/edit.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/main2/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/main2/home.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/main2/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/main2/index.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/main2/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/main2/new.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/main2/show.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/main2/show.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/new.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/partials2/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/partials2/footer.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/partials2/head.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/partials2/head.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/partials2/nav.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/partials2/nav.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/partials2/navbar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/partials2/navbar.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archive/user_model2.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.archive/user_model2.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo/2x/Asset 1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo/2x/logo-md.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo/3x/Asset 1@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo/3x/logo-lg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/main/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/main/home.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partials/navbar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/navbar.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/sessions/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sessions/new.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/users/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/new.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +82,7 @@
       <workItem from="1609333025842" duration="4775000" />
       <workItem from="1609426223188" duration="7564000" />
       <workItem from="1609688721827" duration="5062000" />
-      <workItem from="1609764299109" duration="17106000" />
+      <workItem from="1609764299109" duration="23201000" />
     </task>
     <servers />
   </component>

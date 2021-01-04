@@ -14,10 +14,12 @@ A web app that allows users to sell computers, gadgets and other technology item
 * express = nodejs web framework
 * ejs = html templating
 * mongoDB = nosql database
-* elasticsearch = search (stretch)
+* elasticsearch = search (stretch - N/A)
 * jquery = simplify DOM manipuation
 * stripe = payment api
-* postman
+* postman = route testing pre-rendering
+* bootstrap = css framework
+* ejs-mate = boilerplate html
 
 ## Inspiration
 * Fruits
@@ -46,14 +48,21 @@ A web app that allows users to sell computers, gadgets and other technology item
 
 * Encrypting the password before it is stored in the database is not working as outlined
   in the course. Perhaps it must be added to the controller not the model as we do in
-  the class example. But, that has proven to be insecure locally. Alas, I was forced to abandon pre-hashing and working with approach outlined in class. 
+  the class example. But, that has proven to be insecure locally. Alas, I was forced to abandon pre-hashing and working with approach outlined in class. NOTE: Matt pointed out I was using the next iterator incorrectly.
 
 ## Wins
 * Understand that CRUD translates to: post = create, get = read, put = update, 
   delete = delete.
 * Rebuilt fruits from scatch and converted it to Brendan's authorization approach.
 
-
+##SPECIAL THANKS
+* Matt = general guidance
+* Brendan = authentication
+* Jerrica = front-end cheat codes from class
+* Evan = add secret to Heroku settings
+* Malik = willingness to help resolve ES5-ES6 conversion issue
+* Unsplash = images
+* Udemy = course
 
 ### Action Items
 [x] set up github
@@ -68,14 +77,11 @@ A web app that allows users to sell computers, gadgets and other technology item
 
 [x] .idea added to .gitignore
 
-[ ] 2nd git push
+[x] 2nd git push
 
-[ ] 2nd heroku push
+[x] 2nd heroku push
 
-##SPECIAL THANKS
-* Matt = general guidance
-* Brendan = authentication
-* Jerrica = front-end cheat codes from class
-* Evan = add secret to Heroku settings
-* Malik = willingness to help resolve ES5-ES6 conversion issue
+
+
+
 
