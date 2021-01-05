@@ -66,6 +66,8 @@ var sessionsController = require("./controllers/sessions_controller.js");
 app.use("/sessions", sessionsController);
 var mainController = require("./controllers/main_controller.js");
 app.use("/", mainController);
+var electronicsController = require("./controllers/electronics_controller.js");
+app.use("/electronics", electronicsController);
 /*
 * routes
 * */

@@ -50,10 +50,17 @@ A web app that allows users to sell computers, gadgets and other technology item
   in the course. Perhaps it must be added to the controller not the model as we do in
   the class example. But, that has proven to be insecure locally. Alas, I was forced to abandon pre-hashing and working with approach outlined in class. NOTE: Matt pointed out I was using the next iterator incorrectly.
 
+* Adding images with proper styling
+
 ## Wins
 * Understand that CRUD translates to: post = create, get = read, put = update, 
   delete = delete.
-* Rebuilt fruits from scatch and converted it to Brendan's authorization approach.
+* Rebuilt fruits from scatch and added Brendan's authorization approach.
+* Built a home page with categories
+* Applied basic bootstrap styling
+* Created a custom logo and favicon in illustrator
+* Added favicon to site
+* Helped others
 
 ##SPECIAL THANKS
 * Matt = general guidance

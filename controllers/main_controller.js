@@ -9,6 +9,9 @@ var main = express.Router();
 main.get("/", function (request, response) {
     response.render("main/home.ejs");
 });
+main.get("/about", function (request, response) {
+    response.render("main/about.ejs");
+});
 /*
 * export
 * */

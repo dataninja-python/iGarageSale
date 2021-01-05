@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <% include ../partials/head.ejs %>
+</head>
+<body>
+<nav>
+    <% include ../partials/nav.ejs %>
+</nav>
+<div class="container">
+    <h1>Electronics Show Page</h1>
+    <p>Item: <%= electronic.name %></p>
+    <p>Brand: <%= electronic.brand %></p>
+    <p>Available color: <%= electronic.color %></p>
+    <p>Quantity: <%= electronic.quantity %></p>
+    <p>Price: <%= electronic.price %></p>
+    <br>
+    <button type="button" name="button"><a href="/electronics/<%= electronic._id %>/edit">Edit</a></button>
+    <br>
+    <br>
+    <form action="/electronics/<%= electronic._id %>?_method=DELETE" method="POST">
+        <input type="submit" value="DELETE"/>
+    </form>
+    <br>
+    <button type="button" name="button">
+        <a href="/electronics">Back</a>
+    </button>
+</div>
+</body>
+</html>

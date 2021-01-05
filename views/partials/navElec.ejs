@@ -1,12 +1,12 @@
-<a href="/fruits" class="brand-logo left">Fruits</a>
+<a href="/electronics" class="brand-logo left">Electronics Home</a>
 <ul class="right">
-    <li><a href="/fruits/new">Create a new Fruit</a></li>
-    <li><a href="/fruits/setup/seed">Get Inventory</a></li>
+    <li><a href="/electronics/new">Create a New Item</a></li>
+    <li><a href="/electronics/setup/seed">Get Inventory</a></li>
     <% if(currentUser) { %>
         <li>Welcome, <%= currentUser.username %> </li>
         <li>
             <form action="/sessions?_method=DELETE" method="POST">
-                <input type="submit" value="Log Out" class="btn-small red"/>
+                <input type="submit" value="Log Out" class="btn-success"/>
             </form>
         </li>
     <% } else { %>

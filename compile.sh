@@ -9,7 +9,10 @@
 tsc server.ts
 tsc models/fruits_model.ts
 tsc models/user_model.ts
+tsc models/electronics_model.ts
 tsc controllers/fruits_controller.ts
 tsc controllers/users_controller.ts
 tsc controllers/sessions_controller.ts
 tsc controllers/main_controller.ts
+tsc controllers/electronics_controller.ts
+
