@@ -39,6 +39,7 @@ var newRoute = "/new";
 var seedRoute = "/setup/seed";
 var idRoute = "/:id";
 var editRoute = "/:id/edit";
+var buyRoute = "/:id/buy";
 /*
 * authentication
 * */
@@ -119,6 +120,24 @@ electronics.put(idRoute, function (request, response) {
             throw error;
         response.redirect("/electronics");
     });
+});
+electronics.put(buyRoute, function (request, response) {
+    var body = request.body;
+    var id = request.params.id;
+    var myQuery = {
+        _id: id
+    };
+    var newValue = {
+        $inc: {
+            quantity: -1
+        }
+    };
+    Electronics.updateOne(myQuery, newValue, function (error, response) {
+        if (error)
+            throw error;
+        console.log("bought item");
+    });
+    response.redirect("/electronics/" + id);
 });
 //------------------ delete routes (delete) ---------------------
 // delete an item

@@ -1,11 +1,8 @@
 <% layout("boilerplate") -%>
 
-<nav>
-    <% include ../partials/nav.ejs %>
-</nav>
 <div class="container">
-    <h1>Electronics Show Page</h1>
-    <p>Item: <%= electronic.name %></p>
+    <h1><%= electronic.name %></h1>
+    <img src="<%=electronic.image%>" class="show-image"/>
     <p>Brand: <%= electronic.brand %></p>
     <p>Available color: <%= electronic.color %></p>
     <p>Quantity: <%= electronic.quantity %></p>
@@ -16,6 +13,9 @@
     <br>
     <form action="/electronics/<%= electronic._id %>?_method=DELETE" method="POST">
         <input type="submit" value="DELETE"/>
+    </form>
+    <form action="/electronics/<%=electronic._id%>/buy?_method=PUT" method="POST">
+        <input type="submit" value="Buy"/>
     </form>
     <br>
     <button type="button" name="button">

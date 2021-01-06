@@ -41,6 +41,7 @@ const newRoute = "/new";
 const seedRoute = "/setup/seed";
 const idRoute = "/:id";
 const editRoute = "/:id/edit";
+const buyRoute = "/:id/buy";
 
 /*
 * authentication
@@ -136,6 +137,24 @@ electronics.put(idRoute, function (request, response) {
         if (error) throw error;
         response.redirect("/electronics");
     });
+});
+
+electronics.put(buyRoute, function (request, response) {
+    let body = request.body;
+    let id = request.params.id;
+    let myQuery = {
+        _id: id
+    };
+    let newValue = {
+        $inc: {
+            quantity: -1
+        }
+    };
+    Electronics.updateOne(myQuery, newValue, function (error, response) {
+        if(error) throw error;
+        console.log("bought item");
+    });
+    response.redirect(`/electronics/${id}`);
 });
 
 //------------------ delete routes (delete) ---------------------
