@@ -2,12 +2,7 @@
 This is an express ecommerce app where one person's new, used, or created tech can become another's treasure.
 
 ## MVP
-A web app that allows users to sell computers, gadgets and other technology items as they would at a garage sale. This means people can submit offers (stretch goal).
-
-## Stretch Goals
-* allow people to make an offer above or below the purchase price
-* allow price to move over time
-* encrypt password with bcrypt pre putting it in the db
+A basic CRUD app that allows users to buy items as they would at a garage sale.
 
 ##Technology Stack
 * nodejs = backend javascript
@@ -57,10 +52,11 @@ A web app that allows users to sell computers, gadgets and other technology item
   delete = delete.
 * Rebuilt fruits from scatch and added Brendan's authorization approach.
 * Built a home page with categories
-* Applied basic bootstrap styling
+* Applied bootstrap styling
 * Created a custom logo and favicon in illustrator
 * Added favicon to site
 * Helped others
+* Mobile first design
 
 ##SPECIAL THANKS
 * Matt = general guidance
@@ -70,6 +66,13 @@ A web app that allows users to sell computers, gadgets and other technology item
 * Malik = willingness to help resolve ES5-ES6 conversion issue
 * Unsplash = images
 * Udemy = course
+
+## Stretch Goals With More Time
+* allow people to make an offer above or below the purchase price
+* allow price to move over time
+* encrypt password with bcrypt pre putting it in the db
+* add misc category
+* layout products better
 
 ### Action Items
 [x] set up github
@@ -88,6 +91,7 @@ A web app that allows users to sell computers, gadgets and other technology item
 
 [x] 2nd heroku push
 
+[] add buy functionality
 
 
 

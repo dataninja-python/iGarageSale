@@ -6,28 +6,28 @@ var Electronics = require("../models/electronics_model.js");
 var electronics = express.Router();
 var electronicsSeed = [
     {
-        name: "GO2",
+        name: "GO2 Speaker",
         brand: "JBL",
         color: "Blue",
         quantity: 3,
-        price: 0,
-        image: ""
+        price: 24.99,
+        image: "/images/items/jblspeaker.jpg"
     },
     {
-        name: "GO2",
+        name: "GO2 Speaker",
         brand: "JBL",
         color: "Black",
         quantity: 3,
-        price: 0,
-        image: ""
+        price: 24.99,
+        image: "/images/items/jblspeaker.jpg"
     },
     {
-        name: "GO2",
+        name: "GO2 Speaker",
         brand: "JBL",
         color: "Red",
-        quantity: 3,
-        price: 0,
-        image: ""
+        quantity: 2,
+        price: 24.99,
+        image: "/images/items/jblspeaker.jpg"
     }
 ];
 /*

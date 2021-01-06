@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd0fe361-31fc-4949-80c5-ee78d0b1bb7e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/electronics_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/electronics_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/electronics_controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/electronics_controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/categories/designecologist-computer-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/categories/designecologist-computer-unsplash.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/categories/liz-caldwell-berries-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/categories/liz-caldwell-berries-unsplash.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/categories/lorenzo-herrera-misc-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/categories/lorenzo-herrera-misc-unsplash.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/electronics/edit.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/electronics/edit.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/electronics/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/electronics/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/electronics/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/electronics/new.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/electronics/show.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/electronics/show.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/main/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/main/home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/navElec.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/navElec.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/sessions/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/sessions/new.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/users/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/new.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +52,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/partials" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.archive" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -82,7 +97,9 @@
       <workItem from="1609426223188" duration="7564000" />
       <workItem from="1609688721827" duration="5062000" />
       <workItem from="1609764299109" duration="24348000" />
-      <workItem from="1609864074865" duration="14923000" />
+      <workItem from="1609864074865" duration="18051000" />
+      <workItem from="1609947342788" duration="325000" />
+      <workItem from="1609947971182" duration="4074000" />
     </task>
     <servers />
   </component>

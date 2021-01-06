@@ -1,23 +1,22 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <% include ../partials/head.ejs %>
-</head>
-<body>
+<% layout("boilerplate") -%>
 <nav>
     <% include ../partials/navElec.ejs %>
 </nav>
 <div class="container">
-
     <h1>Electronics</h1>
-    <ul>
+    <div class="grid-container">
         <% for (let electronic of electronics ) { %>
-            <li>
-                <a href="/electronics/<%= electronic._id %>">
-                    <%= electronic.name %>
-            </li>
+            <div class="grid-item">
+                <div>
+                    <img src="<%=electronic.image%>" class="grid-image"/><br/>
+                    <p><%= electronic.name %></p>
+                    <p>Color: <%=electronic.color%></p>
+                    <p>Price: <%=electronic.price%></p>
+                    <a href="/electronics/<%= electronic._id %>">
+                        Click For More
+                    </a>
+                </div>
+            </div>
         <% } %>
-    </ul>
+    </div>
 </div>
-</body>
-</html>

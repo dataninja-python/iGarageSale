@@ -1,37 +1,31 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <% include ../partials/head.ejs %>
-</head>
-<body>
+<% layout("boilerplate") -%>
+
 <nav>
     <% include ../partials/nav.ejs %>
 </nav>
-    <div class="container">
-        <h1>Electronics New Page</h1>
-        <form action="/electronics/<%= electronic.id %>?_method=PUT" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" name="name" value="<%= electronic.name %>"/>
-            <br/>
-            <label for="brand">Brand:</label>
-            <input type="text" name="brand" value="<%= electronic.brand %>"/>
-            <br/>
-            <label for="color">Color:</label>
-            <input type="text" name="color" value="<%= electronic.color %>"/>
-            <br/>
-            <label for="quantity">Quantity:</label>
-            <input type="number" name="quantity" value="<%= electronic.quantity %>"/>
-            <br/>
-            <label for="image">Price:</label>
-            <input type="text" name="image" value="<%= electronic.price %>"/>
-            <br/>
-            <input type="submit" value="Submit">
-            <form>
-                <button type="button" name="button">
-                    <a href="/electronics">Back</a>
-                </button>
-            </form>
+<div class="container">
+    <h1>Electronics New Page</h1>
+    <form action="/electronics/<%= electronic.id %>?_method=PUT" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="<%= electronic.name %>"/>
+        <br/>
+        <label for="brand">Brand:</label>
+        <input type="text" name="brand" value="<%= electronic.brand %>"/>
+        <br/>
+        <label for="color">Color:</label>
+        <input type="text" name="color" value="<%= electronic.color %>"/>
+        <br/>
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" value="<%= electronic.quantity %>"/>
+        <br/>
+        <label for="image">Price:</label>
+        <input type="text" name="image" value="<%= electronic.price %>"/>
+        <br/>
+        <input type="submit" value="Submit">
+        <form>
+            <button type="button" name="button">
+                <a href="/electronics">Back</a>
+            </button>
         </form>
-    </div>
-</body>
-</html>
+    </form>
+</div>

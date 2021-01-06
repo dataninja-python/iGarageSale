@@ -43,6 +43,12 @@
     margin-top: 20px;
 }
 
+.card-img-top {
+    /*border-top: 1px solid red;*/
+    /*width: 22vw !important;*/
+    /*height: 20vh !important;*/
+}
+
 .my-links {
     color: darkgray;
     text-decoration: none;
@@ -62,4 +68,48 @@
 
 .card-title {
     margin-top: 7px;
+}
+
+/*NOTE: learned how to use the grid system on w3schools - https://www.w3schools.com/css/css_grid.asp */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.grid-item {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-image {
+    width: 40vw;
+    min-width: 100px;
+    height: auto;
+}
+
+@media(min-width: 576px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+    .grid-image {
+        width: 20vw;
+        max-with: 200px;
+        height: auto;
+    }
+}
+
+@media(min-width: 768px) {
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+    .grid-image {
+        width: 20vw;
+        max-with: 250px;
+        height: auto;
+    }
 }
