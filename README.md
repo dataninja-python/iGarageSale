@@ -15,6 +15,7 @@ A basic CRUD app that allows users to buy items as they would at a garage sale.
 * postman = route testing pre-rendering
 * bootstrap = css framework
 * ejs-mate = boilerplate html
+* heroku = app hosting
 
 ## Inspiration
 * Fruits
@@ -66,6 +67,7 @@ A basic CRUD app that allows users to buy items as they would at a garage sale.
 * Malik = willingness to help resolve ES5-ES6 conversion issue
 * Unsplash = images
 * Udemy = course
+* The Bruhski's Study Group = motivation
 
 ## Stretch Goals With More Time
 * allow people to make an offer above or below the purchase price
@@ -73,6 +75,7 @@ A basic CRUD app that allows users to buy items as they would at a garage sale.
 * encrypt password with bcrypt pre putting it in the db
 * add misc category
 * layout products better
+* have different pictures per product
 
 ### Action Items
 [x] set up github
@@ -91,7 +94,7 @@ A basic CRUD app that allows users to buy items as they would at a garage sale.
 
 [x] 2nd heroku push
 
-[] add buy functionality
+[x] add buy functionality
 
 
 
