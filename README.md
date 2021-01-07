@@ -48,6 +48,8 @@ A basic CRUD app that allows users to buy items as they would at a garage sale.
 
 * Adding images with proper styling
 
+* When all items are deleted, app crashes on Heroku
+
 ## Wins
 * Understand that CRUD translates to: post = create, get = read, put = update, 
   delete = delete.
